@@ -8,10 +8,12 @@ node_modules/
 
 # Vite build output
 dist/
+*.vsix
+vscode-extension/media/assets/
+vscode-extension/media/index.html
+vscode-extension/out/
 
 # Misc
 .DS_Store
 *.log
-src/as.env
-
 src/as.env

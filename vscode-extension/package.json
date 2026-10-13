@@ -1,0 +1,55 @@
+{
+  "name": "socraticdev-studio",
+  "displayName": "SocraticDev Studio (PRO)",
+  "description": "AI-powered Socratic coding mentor — Concept Hints, Code Skeletons & guided learning via Groq.",
+  "version": "1.0.0",
+  "publisher": "socraticdev",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education",
+    "Programming Languages",
+    "Other"
+  ],
+  "icon": "media/icon.png",
+  "activationEvents": [
+    "onCommand:socraticdev.openPanel"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "socraticdev.openPanel",
+        "title": "Open SocraticDev Studio",
+        "icon": "$(lightbulb)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "socraticdev.openPanel",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "socraticdev.openPanel",
+        "key": "ctrl+shift+s",
+        "mac": "cmd+shift+s"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
