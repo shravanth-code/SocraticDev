@@ -12,6 +12,6 @@ dist/
 # Misc
 .DS_Store
 *.log
-
+src/as.env
 
 src/as.env
