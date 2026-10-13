@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Environment variables (keep API keys secret!)
+.env
+.env.local
+.env.*.local
+
+# Vite build output
+dist/
+
+# Misc
+.DS_Store
+*.log
