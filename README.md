@@ -19,9 +19,7 @@ git clone https://github.com/your-username/socraticdev-studio.git
 cd socraticdev-studio
 Install Dependencies
 npm install
-3. Configure Environment Variables
-​Create a .env file in the root directory and add your Groq API key:
->VITE_GROQ_API_KEY=your_groq_api_key_here
+3. Configure Environment Variable
 . Run the Development Server
 >npm run dev
 Open http://localhost:5173 in your browser.
